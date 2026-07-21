@@ -1,0 +1,4 @@
+[ZoneTransfer]
+ZoneId=3
+ReferrerUrl=https://claude.ai/chat/7b623701-b963-43d9-92fb-125701d6e176
+HostUrl=https://claude.ai/api/organizations/5df6f66a-f1f7-4381-bc44-49dff6daa362/conversations/7b623701-b963-43d9-92fb-125701d6e176/wiggle/download-files?paths=%2Fmnt%2Fuser-data%2Foutputs%2Fconfig-precedence-api.zip&paths=%2Fmnt%2Fuser-data%2Foutputs%2Fanalytics-api.zip&paths=%2Fmnt%2Fuser-data%2Foutputs%2Fobservability-api.zip&paths=%2Fmnt%2Fuser-data%2Foutputs%2Finvoice-extract-api.zip&paths=%2Fmnt%2Fuser-data%2Foutputs%2Forders-api.zip&paths=%2Fmnt%2Fuser-data%2Foutputs%2Fmiddleware-stack-api.zip&paths=%2Fmnt%2Fuser-data%2Foutputs%2Fcompose-redis-api.zip

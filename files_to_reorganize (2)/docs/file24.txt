@@ -1,0 +1,10 @@
+category: resources
+
+CONTENT FILES - File 24
+
+This is a test file for the reorganization exercise.
+Path: docs/file24.txt
+Category: resources
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
