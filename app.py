@@ -7,6 +7,7 @@ from google.genai import types
 
 app = FastAPI(title="Invoice Intelligence API")
 
+# Define strict Pydantic output model matching your extraction schema
 class LineItem(BaseModel):
     sku: str
     quantity: int
@@ -45,8 +46,9 @@ def extract_invoice(req: InvoiceRequest):
     client = genai.Client(api_key=api_key)
 
     try:
+        # Using active Gemini model
         response = client.models.generate_content(
-            model="gemini-2.5-flash",
+            model="gemini-3.5-flash",
             contents=f"Extract structured invoice fields from this document text:\n\n{req.text}",
             config=types.GenerateContentConfig(
                 response_mime_type="application/json",
@@ -61,6 +63,7 @@ def extract_invoice(req: InvoiceRequest):
 
         data = extracted_obj.model_dump()
 
+        # Normalization steps
         if data.get("contact_email"):
             data["contact_email"] = data["contact_email"].lower()
         data["item_count"] = len(data.get("line_items", []))
